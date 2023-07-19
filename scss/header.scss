@@ -1,9 +1,9 @@
-// Estilos del encabezado
+
 header {
     height: 15vh;
-    background-color:$backgraundheader
+    background-color:$backgraundheader;
 }
-  // Estilos de la lista y los elementos de la lista
+  
 ul {
     li {
       list-style-type: none;
@@ -12,14 +12,18 @@ ul {
       a {
         text-decoration: none;
         color: black;
+        &:hover{
+            font-weight: bold;
+            font-size: 1rem ;
+        }
       }
     }
-  }// Estilos del encabezado "headerprocedimientos"
+  }
 #headerprocedimientos {
     height: 15%;
     background-color: #09879d;
   }
-  // Estilos del título "tituloprocedimientos"
+  
 #tituloprocedimientos {
     grid-area: 1;
     display: flex;
