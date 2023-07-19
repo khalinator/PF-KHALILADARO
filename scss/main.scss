@@ -1,0 +1,29 @@
+// Estilos del contenido principal
+main {
+    height: 70vh;
+    background-color: #87c0ca;
+  }
+  // Estilos del contenido principal "mainprocedimientos"
+#mainprocedimientos {
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-row: 2;
+    background-color: #87c0ca;
+  }
+  // Estilos de las secciones "sectionprocedimientos"
+.sectionprocedimientos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    text-align: center;
+  
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }

@@ -1,0 +1,28 @@
+// Estilos del encabezado
+header {
+    height: 15vh;
+    background-color: #09879d;
+  }
+  // Estilos de la lista y los elementos de la lista
+ul {
+    li {
+      list-style-type: none;
+      border: 5px solid black;
+  
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }// Estilos del encabezado "headerprocedimientos"
+#headerprocedimientos {
+    height: 15%;
+    background-color: #09879d;
+  }
+  // Estilos del título "tituloprocedimientos"
+#tituloprocedimientos {
+    grid-area: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #87c0ca;
+  }
