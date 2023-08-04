@@ -1,0 +1,41 @@
+$link-color: black;
+header{
+  
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+
+
+    .logo{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        img{
+            height: 80px ;
+            margin-right: 5px;
+            border-radius: 50px;
+          
+                    }
+                    
+                }
+            }
+
+
+            nav{
+                display: flex;
+                margin: 10px ;
+                align-items: center;
+                a {
+                    color: $link-color;
+                    font-size: 1.2rem;
+                    text-decoration:none;
+                    margin: 10px ;
+                    transition:.5s;
+                    &:hover{
+                        color:$link-color;
+                        height: 5px ;
+                        }  
+                     }                    
+                    }

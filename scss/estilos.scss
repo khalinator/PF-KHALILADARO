@@ -1,4 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  body {
+    height: 100vh;
+   background-image: url(../assets/images/fondoclaro.png);
+  background-size: cover;
+  position: relative  ;
+  min-height:100vh ;}
+  @media (max-width: 880px) {
+    body {
+      height: max-content;
+  
+      header {
+        font-size: 1rem;
+        flex-direction: column;
+        
+        nav a {
+          font-size: 0.8rem;
+        }
+       }
+  
+      main {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+  
+        .tituloprocedimientos {
+          justify-content: center;
+          font-size: 0.6rem;
+        }
+  
+        div h2 {
+          font-size: 0.8rem;
+        }
+  
+        section {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .card {
+          height: auto;
+          width: max-content;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+  
+      footer {
+        justify-content: center;
+  
+        ul a {
+          justify-content: center;
+          height: max-content;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    body {
+      height: max-content;
+  
+      header {
+        font-size: 0.2rem;
+        align-items: center;
+        padding: 50px;
+  
+        nav a {
+          font-size: 0.5rem;
+        }
+  
+        .logo img {
+          display: none;
+        }
+      }
+  
+      main {
+        div h2 {
+          font-size: 0.8rem;
+        
+  
+        .main-contac {
+          justify-content: center;
+        
+          section {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+   } 
+  }
+ } 
+  
 
+@media (max-width: 400px){  
+  footer  ul a {
+      display: none;
+      }
+   }
+ @media (max-width: 400px){
+    #div-contact{
+      display:none;
+    }
+  }
 @import "./variables.scss";
 @import "./header.scss";
 @import "./main.scss";

@@ -1,0 +1,38 @@
+#footerprocedimientos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  flex-direction: column;
+}
+#footerprocedimientos ul {
+  color: link-color;
+  margin: 0;
+  padding: 0;
+}
+#footerprocedimientos ul a {
+  color: link-color;
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+.social-icons a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+.social-icons a:hover {
+  transition: 0.5s;
+  transform: translateY(-3%);
+}
+.social-icons a i {
+  font-size: 2rem;
+  color: link-color;
+  opacity: 0.9;
+  justify-content: right;
+}/*# sourceMappingURL=footer.css.map */
