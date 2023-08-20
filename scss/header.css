@@ -5,12 +5,13 @@ header {
   min-height: 70px;
   align-items: center;
 }
-header .logo {
+
+.logo {
   margin: 0;
   display: flex;
   align-items: center;
 }
-header .logo img {
+.logo img {
   height: 80px;
   margin-right: 5px;
   border-radius: 50px;
