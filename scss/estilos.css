@@ -92,8 +92,20 @@ body {
   }
 }
 @media (max-width: 400px) {
-  #div-contac {
+  #div-contact {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .gallery .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
   }
 }
 header {
@@ -131,47 +143,39 @@ nav a:hover {
   height: 5px;
 }
 
-.conteiner {
+.main_index .conteiner {
   display: flex;
   display: inline-block;
   justify-content: space-around;
 }
-.conteiner .card {
+.main_index .conteiner .card_index {
   border-radius: 6px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.main_index .conteiner .card_index a {
+  text-decoration: none;
+  color: black;
   cursor: default;
   transition: all 400ms ease;
   opacity: 1;
 }
-.conteiner .card:hover {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+ .card_index a:hover {
+  box-shadow: 10px 10px 20px bg-color;
   transform: translateY(-3%);
 }
-
-.card .contenido {
-  padding: 15px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
+.contenido{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.card .contenido a {
+.contenido a{
+  list-style: none;
   text-decoration: none;
-  margin: 10px 5px 10px 5px;
-  display: inline-block;
-  color: black;
-  border: 1px solid black;
-  border-radius: 4px;
-  transition: all 400ms ease;
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
 }
-.card .contenido a:hover {
-  transform: translateY(-3%);
-  height: 30px;
-  color: black;
-  border: 1px solid white;
-}
-
 #tituloprocedimientos {
   grid-area: 1;
   display: flex;
@@ -207,29 +211,32 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* Social Login */
+  /* Error Message */
 }
 .main-inciosec .login-container {
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 90%;
+  margin: 0 auto;
 }
 .main-inciosec .login-container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-.main-inciosec .login-container h2 form {
+.main-inciosec .login-container form {
   display: flex;
   flex-direction: column;
 }
-.main-inciosec .login-container h2 form input {
+.main-inciosec .login-container form input {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-.main-inciosec .login-container h2 form input button {
+.main-inciosec .login-container form button {
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -237,30 +244,30 @@ nav a:hover {
   border-radius: 3px;
   cursor: pointer;
 }
-
-.social-login {
+.main-inciosec .social-login {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
-.social-login a {
+.main-inciosec .social-login a {
   text-decoration: none;
   color: #fff;
   padding: 5px 15px;
   border-radius: 3px;
 }
-.social-login .facebook {
-  background-color: #3b5998;
+.main-inciosec .social-login a.facebook {
+  background-color: rgb(57, 130, 248);
 }
-.social-login .google {
+.main-inciosec .social-login a.google {
   background-color: #db4a39;
 }
-.social-login a .facebook .google .error-message {
+.main-inciosec .error-message {
   color: red;
   margin-top: 10px;
 }
 
 #footerprocedimientos {
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,6 +286,7 @@ nav a:hover {
 }
 
 .social-icons {
+  color: black;
   display: flex;
   justify-content: right;
   text-align: center;
@@ -297,4 +305,119 @@ nav a:hover {
   color: black;
   opacity: 0.9;
   justify-content: right;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image-grid {
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(186, 50, 50, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+.card img {
+  background-color: rgba(0, 0, 0, 0);
+  max-height: 300px;
+}
+
+.content {
+  margin-top: 15px;
+}
+.content h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.content  a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(21, 21, 22);
+}
+.content h2 ahover {
+  transform: translateY(-5%);
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.content ul li {
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.content ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.form-register {
+  width: auto;
+  height: auto;
+  padding: 30px;
+  border-radius: 4px;
+  font-family: "calibri";
+  box-shadow: 7px 13px 37px #000;
+}
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+}
+.form-register p a {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+}
+.form-register p a:hover {
+  color: rgb(5, 5, 5);
+  text-decoration: underline;
+}
+
+.controls {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #0e0e0e;
+  font-family: "calibri";
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.botons {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  color: rgb(7, 7, 7);
+  margin: 16px 0;
+  font-size: 16px;
 }/*# sourceMappingURL=estilos.css.map */

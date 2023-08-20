@@ -1,42 +1,24 @@
-.conteiner {
+.main_index .conteiner {
   display: flex;
   display: inline-block;
   justify-content: space-around;
 }
-.conteiner .card {
+.main_index .conteiner .card_index {
   border-radius: 6px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.main_index .conteiner .card_index a {
+  text-decoration: none;
+  color: black;
   cursor: default;
   transition: all 400ms ease;
   opacity: 1;
 }
-.conteiner .card:hover {
+.main_index .conteiner .card_index a:hover {
   box-shadow: 10px 10px 20px bg-color;
   transform: translateY(-3%);
-}
-
-.card .contenido {
-  padding: 15px;
-  text-align: center;
-  background-color: bg-color;
-}
-.card .contenido a {
-  text-decoration: none;
-  margin: 10px 5px 10px 5px;
-  display: inline-block;
-  color: black;
-  border: 1px solid black;
-  border-radius: 4px;
-  transition: all 400ms ease;
-  background-color: bg-color;
-}
-.card .contenido a:hover {
-  transform: translateY(-3%);
-  height: 30px;
-  color: black;
-  border: 1px solid white;
 }
 
 #tituloprocedimientos {
@@ -74,29 +56,32 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* Social Login */
+  /* Error Message */
 }
 .main-inciosec .login-container {
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px bg-color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 90%;
+  margin: 0 auto;
 }
 .main-inciosec .login-container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-.main-inciosec .login-container h2 form {
+.main-inciosec .login-container form {
   display: flex;
   flex-direction: column;
 }
-.main-inciosec .login-container h2 form input {
+.main-inciosec .login-container form input {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-.main-inciosec .login-container h2 form input button {
+.main-inciosec .login-container form button {
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -104,25 +89,24 @@
   border-radius: 3px;
   cursor: pointer;
 }
-
-.social-login {
+.main-inciosec .social-login {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
-.social-login a {
+.main-inciosec .social-login a {
   text-decoration: none;
   color: #fff;
   padding: 5px 15px;
   border-radius: 3px;
 }
-.social-login a .facebook {
-  background-color: #3b5998;
+.main-inciosec .social-login a.facebook {
+  background-color: rgb(57, 130, 248);
 }
-.social-login a .facebook .google {
+.main-inciosec .social-login a.google {
   background-color: #db4a39;
 }
-.social-login a .facebook .google .error-message {
+.main-inciosec .error-message {
   color: red;
   margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */

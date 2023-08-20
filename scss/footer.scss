@@ -1,16 +1,17 @@
 $link-color: black;
 #footerprocedimientos{
+    color: black;
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 30vh;
     flex-direction: column; 
     ul{
-        color: link-color;
+        color: black;
         margin: 0;
         padding: 0;
         a{
-            color:link-color;
+            color:black;
             list-style: none;
             text-decoration: none;
       
@@ -18,6 +19,7 @@ $link-color: black;
     }
 }
 .social-icons{
+    color: black;
     display: flex;
     justify-content: right;
     text-align: center;
@@ -31,7 +33,7 @@ $link-color: black;
         }
         i{
             font-size: 2rem;
-            color: link-color;
+            color: black;
             opacity: 0.9;
             justify-content:right;
         }
