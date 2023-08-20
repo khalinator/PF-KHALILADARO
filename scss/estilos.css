@@ -161,10 +161,6 @@ nav a:hover {
   transition: all 400ms ease;
   opacity: 1;
 }
-.main_index .conteiner .card_index a:hover {
-  box-shadow: 10px 10px 20px bg-color;
-  transform: translateY(-3%);
-}
 .contenido{
   display: flex;
   align-items: center;
@@ -176,6 +172,11 @@ nav a:hover {
   text-decoration: none;
   color: #000;
 }
+.main_index .conteiner .card_index a:hover {
+  box-shadow: 10px 10px 20px bg-color;
+  transform: translateY(-3%);
+}
+
 #tituloprocedimientos {
   grid-area: 1;
   display: flex;
@@ -266,47 +267,6 @@ nav a:hover {
   margin-top: 10px;
 }
 
-#footerprocedimientos {
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  flex-direction: column;
-}
-#footerprocedimientos ul {
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-#footerprocedimientos ul a {
-  color: black;
-  list-style: none;
-  text-decoration: none;
-}
-
-.social-icons {
-  color: black;
-  display: flex;
-  justify-content: right;
-  text-align: center;
-}
-.social-icons a {
-  text-decoration: none;
-  padding: 10px;
-  margin: 10px;
-}
-.social-icons a:hover {
-  transition: 0.5s;
-  transform: translateY(-3%);
-}
-.social-icons a i {
-  font-size: 2rem;
-  color: black;
-  opacity: 0.9;
-  justify-content: right;
-}
-
 .gallery {
   display: flex;
   flex-direction: column;
@@ -354,7 +314,7 @@ nav a:hover {
   display: block;
   margin-top: 10px;
   text-decoration: none;
-  color: rgb(21, 21, 22);
+  color: rgb(1, 1, 11);
 }
 .content h2 ahover {
   transform: translateY(-5%);
@@ -420,4 +380,45 @@ nav a:hover {
   color: rgb(7, 7, 7);
   margin: 16px 0;
   font-size: 16px;
+}
+
+#footerprocedimientos {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  flex-direction: column;
+}
+#footerprocedimientos ul {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+#footerprocedimientos ul a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-icons {
+  color: black;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+.social-icons a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+.social-icons a:hover {
+  transition: 0.5s;
+  transform: translateY(-3%);
+}
+.social-icons a i {
+  font-size: 2rem;
+  color: black;
+  opacity: 0.9;
+  justify-content: right;
 }/*# sourceMappingURL=estilos.css.map */
