@@ -161,7 +161,7 @@ nav a:hover {
   transition: all 400ms ease;
   opacity: 1;
 }
- .card_index a:hover {
+.main_index .conteiner .card_index a:hover {
   box-shadow: 10px 10px 20px bg-color;
   transform: translateY(-3%);
 }
